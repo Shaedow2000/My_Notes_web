@@ -8,17 +8,53 @@
     <title>My Notes - Home</title>
   </head>
   <body class="bg-white dark:bg-gray-800 w-screen h-screen">
-    <header class="w-screen h-16 bg-gray-700 shadow-lg shadow-black flex items-center justify-evenly">
-      <a 
-        id="logo-header" 
-        class="text-gray-200 font-black text-2xl"
-        href="/"
-      >
-        My Notes!
-      </a>
-      <section class="flex items-center justify-evenly">
-        <h2 class="font-semibold text-sm text-white">me123@gmail.com</h2>
-        <img src="" alt="pp">
+    <aside class="h-screen w-96 bg-gray-900 absolute shadow-2xl shadow-black" id="aside">
+      <section class="flex justify-around pt-4 border-b-2 border-b-white pb-4">
+        <h1 class="text-gray-300 font-black text-4xl flex items-center justify-center">MyNotes!</h1>
+        <img id="xmark" 
+          class="icon icon-hover"
+          src="src/assets/icons/x.svg"
+          alt="x-mark"
+        >
+      </section>
+
+      <section class="flex flex-col items-center justify-center gap-y-5 py-8 border-b-2 border-b-white">
+        <h1 class="text-3xl font-extrabold text-gray-400 pb-4">Actions</h1>
+        <div class="big-btn" id="add-note">
+          <img src="src/assets/icons/plus.svg" alt="plus">
+          <p>Add A New Note</p>
+        </div>
+        <div class="big-btn" id="delete-note">
+          <img src="src/assets/icons/delete.svg" alt="del">
+          <p>Delete A Note</p>
+        </div>
+        <div class="big-btn" id="del-all-notes">
+          <img src="src/assets/icons/del-all.svg" alt="delete-all">
+          <p>Delete All Notes</p>
+        </div>
+        <div class="big-btn" id="refresh-notes">
+          <img src="src/assets/icons/refresh.svg" alt="refresh">
+          <p>Refresh All Notes</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center justify-center gap-y-5 py-8">
+        <h1 class="text-3xl font-extrabold text-gray-400 pb-4">More</h1> 
+        <h1 class="text-2xl font-semibold text-gray-200 flex flex-col items-center justify-center gap-y-4 p-8 rounded-full bg-gray-700/20">Logged In As: <span class="text-green-200 font-bold text-3xl">me@gmail.com</span></h1>
+        <div class="big-btn" id="settings-btn">
+          <img src="src/assets/icons/settings.svg" alt="settings">
+          <p>Settings</p>
+        </div>
+      </section>
+    </aside>
+    <header class="flex items-center">
+      <section class="flex items-center justify-around py-4 w-96">
+        <h1 class="text-gray-300 font-black text-4xl">MyNotes!</h1>
+        <img id="menu"
+          class="icon icon-hover"
+          src="src/assets/icons/menu.svg" 
+          alt="open-menu"
+        >
       </section>
     </header>
   </body>

@@ -1,1 +1,27 @@
 @import 'tailwindcss';
+
+@layer base {
+  aside {
+    left: -900px;
+  }
+
+  .icon {
+    @apply h-14 w-14 p-2 flex items-center justify-center
+  }
+  .icon-hover:hover {
+    @apply bg-gray-700 cursor-pointer rounded-full
+  }
+
+  .big-btn {
+    @apply w-[90%] h-fit p-4 flex items-center justify-evenly bg-gray-700/20 rounded-full
+  }
+  .big-btn > p {
+    @apply text-gray-300 font-bold text-xl flex items-center justify-center
+  }
+  .big-btn > img {
+    @apply h-14 w-14 p-2 flex items-center justify-center
+  }
+  .big-btn:hover {
+    @apply cursor-pointer bg-gray-300/25 border-none
+  }
+}
