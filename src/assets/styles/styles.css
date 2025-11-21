@@ -8,19 +8,18 @@
 
   aside {
     left: -400px;
-    transition: ease-in-out 0.3s;
   }
 
   .icon {
-    @apply h-14 w-14 p-2 flex items-center justify-center
+    @apply h-14 w-14 p-2 flex items-center justify-center bg-gray-700/20 rounded-full
   }
   .icon-hover:hover {
     @apply bg-gray-700 cursor-pointer rounded-full
   }
 
   .big-btn {
-    @apply w-[90%] h-fit p-4 flex items-center justify-evenly bg-gray-700/20 rounded-full
-  }
+    @apply w-[90%] h-fit p-4 flex items-center justify-evenly  bg-gray-700/20 rounded-full
+ }
   .big-btn > p {
     @apply text-gray-300 font-bold text-xl flex items-center justify-center
   }
