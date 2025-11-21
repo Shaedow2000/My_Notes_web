@@ -1,8 +1,14 @@
 @import 'tailwindcss';
 
 @layer base {
+  *, 
+  body {
+    transition: ease-in-out 0.25s;
+  }
+
   aside {
-    left: -900px;
+    left: -400px;
+    transition: ease-in-out 0.3s;
   }
 
   .icon {
