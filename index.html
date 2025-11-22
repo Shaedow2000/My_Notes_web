@@ -8,7 +8,7 @@
     <title>My Notes - Home</title>
   </head>
   <body class="bg-white dark:bg-gray-800 w-screen h-screen">
-    <aside class="h-screen w-96 bg-gray-900 absolute shadow-2xl shadow-black" id="aside">
+    <aside class="h-screen w-96 bg-gray-900 absolute shadow-2xl shadow-black z-20" id="aside">
       <section class="flex justify-around pt-4 border-b-2 border-b-white pb-4">
         <h1 class="text-gray-300 font-black text-4xl flex items-center justify-center">MyNotes!</h1>
         <img id="xmark" 
@@ -47,7 +47,10 @@
         </div>
       </section>
     </aside>
-    <header class="flex items-center">
+
+    <section class="h-screen w-screen z-10 bg-black/60 shdbg" id="shadow-bg"></section>
+
+    <header class="flex items-center border-b-2 border-b-white">
       <section class="flex items-center justify-around py-4 w-96">
         <h1 class="text-gray-300 font-black text-4xl">MyNotes!</h1>
         <img id="menu"
@@ -56,6 +59,6 @@
           alt="open-menu"
         >
       </section>
-    </header>
+
   </body>
 </html>

@@ -13,7 +13,7 @@
   .icon {
     @apply h-14 w-14 p-2 flex items-center justify-center bg-gray-700/20 rounded-full
   }
-  .icon-hover:hover {
+  .icon:hover {
     @apply bg-gray-700 cursor-pointer rounded-full
   }
 
@@ -28,5 +28,10 @@
   }
   .big-btn:hover {
     @apply cursor-pointer bg-gray-300/25 border-none
+  }
+
+  .shdbg {
+    position: absolute;
+    display: none;
   }
 }
