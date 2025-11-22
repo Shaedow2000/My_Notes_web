@@ -31,7 +31,7 @@
   }
 
   .shdbg {
-    position: absolute;
+    position: fixed; 
     display: none;
   }
 }
