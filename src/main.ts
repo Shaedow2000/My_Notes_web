@@ -4,7 +4,7 @@ const menu = document.getElementById( 'menu' ) as HTMLImageElement;
 const shadow_bg = document.getElementById( 'shadow-bg' ) as HTMLDivElement;
 
 xmark.addEventListener( 'click', (): void => {
-  aside.style.left = '-400px';
+  aside.style.left = '-600px';
   shadow_bg.style.display = 'none';
 } );
 
