@@ -34,4 +34,23 @@
     position: fixed; 
     display: none;
   }
+
+  .note {
+    @apply w-96 h-90 rounded-2xl 
+  }
+  .note:hover {
+    @apply -translate-y-2 shadow-lg shadow-gray-200
+  }
+  .title-note {
+    @apply w-full h-25 bg-yellow-500 rounded-t-2xl border-b-2 border-b-black flex items-center pl-8
+  }
+  .title-note h2 {
+    @apply text-3xl font-bold
+  }
+  .text-note {
+    @apply w-full h-65 bg-gray-200 rounded-b-2xl p-5
+  }
+  .text-note h4 {
+    @apply text-xl font-semibold wrap-break-word
+  }
 }
