@@ -36,10 +36,13 @@
   }
 
   .note {
-    @apply w-96 h-90 rounded-2xl 
+    @apply w-72 md:w-90 lg:w-96 h-64 sm:h-74 md:h-90 rounded-2xl cursor-pointer
   }
   .note:hover {
     @apply -translate-y-2 shadow-lg shadow-gray-200
+  }
+  .note:active {
+    @apply translate-y-2 shadow-none transition-all duration-250
   }
   .title-note {
     @apply w-full h-25 bg-yellow-500 rounded-t-2xl border-b-2 border-b-black flex items-center pl-8
